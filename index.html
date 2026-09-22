@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baixar Vídeo do YouTube em MP4 e MP3 Grátis | BaixarVideoYT</title>
+    <meta name="description" content="Baixar vídeo do YouTube online, rápido e grátis. Use o BaixarVideoYT para converter vídeos em MP4 (Full HD) e áudios em MP3 (Alta Qualidade). Sem anúncios e sem cadastro.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://baixarvideoyt.com.br/">
+    
+    <!-- OpenGraph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://baixarvideoyt.com.br/">
+    <meta property="og:title" content="Baixar Vídeo do YouTube em MP4 e MP3 Grátis | BaixarVideoYT">
+    <meta property="og:description" content="Baixar vídeo do YouTube online, rápido e grátis. Use o BaixarVideoYT para converter vídeos em MP4 (Full HD) e áudios em MP3.">
+    
+    <!-- JSON-LD (Rich Results & AEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "BaixarVideoYT",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL"
+      },
+      "description": "Ferramenta online gratuita para baixar vídeos, áudios e miniaturas do YouTube em alta qualidade MP4 e MP3."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "BaixarVideoYT",
+      "url": "https://baixarvideoyt.com.br/"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Como baixar vídeo do YouTube direto no celular?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "É muito simples. Abra o app do YouTube, clique em 'Compartilhar' e depois em 'Copiar link'. Cole o link na barra de busca do BaixarVideoYT, clique em Analisar e selecione a opção de baixar vídeo. O download iniciará automaticamente e será salvo na galeria do seu celular."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O BaixarVideoYT é totalmente gratuito e seguro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, o BaixarVideoYT é 100% gratuito. Diferente de outros sites, não exigimos cadastro, não instalamos malwares na sua máquina e não abrimos abas de propagandas invasivas. A conversão é feita nos nossos servidores, garantindo sua privacidade e segurança."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como converter vídeo do YouTube para MP3 grátis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cole a URL do vídeo desejado no nosso buscador. Após a análise do link, escolha o botão 'Baixar Áudio'. Nosso sistema extrairá a faixa original em formato MP3 de alta qualidade e enviará para você."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Existe algum limite de tamanho ou tempo de vídeo para baixar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Atualmente não limitamos a quantidade de downloads, mas vídeos maiores que 2 horas podem demorar mais tempo para serem processados, dependendo da carga dos nossos servidores. Recomendamos o uso responsável."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre MP4 e MP3 na hora de baixar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O MP4 é o formato padrão para vídeos (com áudio e imagem unidos), ideal para assistir clipes e aulas offline. O MP3 é apenas o arquivo de áudio, perfeito para baixar músicas, podcasts ou playlists de som para ouvir no carro ou no celular ocupando muito menos espaço de armazenamento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Onde ficam salvos os vídeos baixados no iPhone ou Android?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No Android, os arquivos vão direto para a pasta 'Downloads' (acessível pelo app Files ou Galeria). No iPhone (iOS), os vídeos e áudios baixados pelo Safari são salvos no aplicativo 'Arquivos', na pasta Downloads. Você também pode salvar os vídeos diretamente no rolo da câmera selecionando a opção 'Salvar Vídeo' nas opções de compartilhamento."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- FontAwesome 6 (Grátis) para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Novas fontes: Space Grotesk (Display) e Inter (Body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header class="pf-header">
+        <div class="pf-container pf-flex pf-justify-between pf-items-center">
+            <a href="/" class="pf-header__brand pf-flex pf-items-center pf-gap-sm">
+                <i class="fa-solid fa-bolt" style="color: var(--color-accent); text-shadow: 0 0 8px rgba(204,255,0,0.5);" aria-hidden="true"></i>
+                BaixarVideoYT
+            </a>
+            
+            <nav class="pf-nav pf-flex pf-items-center" style="gap: 1.5rem;">
+                <button id="theme-toggle" class="pf-btn pf-btn--ghost" aria-label="Alternar tema" style="padding: 0.5rem; font-size: 1.2rem; color: var(--color-ink); background: transparent;">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#faq" class="pf-nav__link">Dúvidas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Assimétrico -->
+        <section class="pf-container pf-section">
+            <div class="pf-hero-layout">
+                <!-- Coluna Esquerda: Texto + Conversão -->
+                <div>
+                    <div class="pf-mb-md">
+                        <span class="pf-badge pf-badge--accent">
+                            <i class="fa-solid fa-bolt" style="font-size: 14px; margin-right: 6px;"></i>
+                            v4.0 Streaming Motor
+                        </span>
+                    </div>
+                    <h1 class="pf-hero__title">
+                        Extraia Vídeos e Áudios em Segundos. Grátis.
+                    </h1>
+                    <p class="pf-hero__subtitle">
+                        Cole o link abaixo para baixar em MP4 (Full HD) ou MP3 (Alta Qualidade). Conversão instantânea direto para o seu navegador, sem limites e sem burocracia.
+                    </p>
+                    
+                    <form id="info-form" class="pf-search-box pf-mb-sm" aria-label="Formulário de Busca de Vídeos">
+                        <div class="pf-search-box__inner">
+                            <div class="pf-search-box__input-wrapper">
+                                <i class="fa-brands fa-youtube pf-search-box__icon" aria-hidden="true"></i>
+                                <input type="url" id="url-input" class="pf-search-box__input" placeholder="Cole o link do vídeo ou Shorts aqui..." aria-label="Link do YouTube" autocomplete="off" spellcheck="false" required>
+                                <button type="button" class="pf-search-box__clear" id="clear-btn" aria-label="Limpar campo" style="display: none;">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                            <button class="pf-btn pf-btn--primary pf-search-box__btn" id="analyze-btn" type="submit">
+                                Analisar <i class="fa-solid fa-arrow-right pf-ml-sm" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div style="font-size: 0.85rem; color: var(--color-ink-muted); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem; font-weight: 500;">
+                        <i class="fa-solid fa-shield-halved" style="color: #10B981;"></i> Gratuito, rápido e livre de marcas d'água.
+                    </div>
+                    
+                    <div id="parseFeedback" class="pf-feedback" style="display:none; margin-left: 0;">
+                        <div class="pf-flex pf-items-center pf-gap-sm">
+                            <i class="fa-solid fa-rotate"></i>
+                            <span class="pf-feedback__text" style="font-weight: 600;">Buscando informações do vídeo...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna Direita: Mockup Estático (Decorativo) -->
+                <div class="pf-hero-mockup" aria-hidden="true">
+                    <div style="position: relative; width: 100%; aspect-ratio: 3/2; overflow: hidden; border-radius: var(--radius-card);">
+                        <img src="https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=1000&auto=format&fit=crop" alt="Baixar vídeo do YouTube em alta qualidade" width="1000" height="667" fetchpriority="high" style="opacity: 0.95; width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.6); color: white; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px);">
+                            <i class="fa-solid fa-play" aria-hidden="true" style="margin-left: 4px; font-size: 1.25rem;"></i>
+                        </div>
+                        <div style="position: absolute; bottom: 1.5rem; right: 0.5rem; background: rgba(0,0,0,0.8); color: white; font-family: var(--pf-font-mono); font-size: 0.75rem; padding: 0.2rem 0.4rem; border-radius: 4px; font-weight: 500;">
+                            12:34
+                        </div>
+                    </div>
+                    
+                    <div style="font-family: var(--pf-font-display); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.25rem;">Designing the Future of Tech</div>
+                    <div style="color: var(--color-ink-muted); font-size: 0.85rem; margin-bottom: 1.25rem;">YouTube Studio Channel</div>
+                    
+                    <div class="pf-flex pf-gap-sm">
+                        <div class="pf-mockup-btn">
+                            <i class="fa-solid fa-film" style="font-size: 16px;"></i> MP4
+                        </div>
+                        <div class="pf-mockup-btn">
+                            <i class="fa-solid fa-music" style="font-size: 16px;"></i> MP3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preview Card Real (Injetado via JS, mantendo IDs e centralizado) -->
+        <div class="pf-container pf-mb-xl">
+            <div id="preview-section" class="pf-preview-card" style="display: none;">
+                <div class="pf-flex pf-gap-md pf-preview-layout">
+                    <div class="pf-preview-thumb">
+                        <img id="preview-img" src="" alt="Thumbnail do vídeo extraído" width="320" height="180">
+                    </div>
+                    <div class="pf-preview-info">
+                        <h2 id="preview-title" class="pf-preview-title">Título</h2>
+                        <p id="preview-desc" class="pf-preview-desc">Descrição</p>
+                        
+                        <!-- Progress Area -->
+                        <div id="progress-area" class="pf-mt-md" style="display: none;">
+                            <div class="pf-flex pf-justify-between pf-mb-sm">
+                                <span style="font-size: 0.85rem; font-weight: 600;">Processando arquivo...</span>
+                                <span id="progress-percent" style="font-size: 0.85rem; font-weight: 700; color: var(--color-accent);">0%</span>
+                            </div>
+                            <div class="pf-progress-bar">
+                                <div id="progress-fill" class="pf-progress-bar__fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr style="border:0; border-top: 1px solid var(--pf-surface-high); margin: 1.5rem 0;" />
+
+                <div id="download-actions-wrapper">
+                    <label style="display:block; margin-bottom: 1rem; color: var(--color-ink-muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; text-align: center; font-weight: 600;">Selecione o formato final:</label>
+                    <div class="pf-flex pf-gap-sm pf-flex-wrap pf-justify-center">
+                        <button type="button" class="pf-btn pf-btn--primary dl-trigger-btn" data-mode="video" style="flex:1; min-width: 200px;">
+                            <i class="fa-solid fa-film" style="margin-right: 6px;"></i> Baixar Vídeo
+                        </button>
+                        <button type="button" class="pf-btn pf-btn--tertiary dl-trigger-btn" data-mode="audio" style="flex:1; min-width: 200px;">
+                            <i class="fa-solid fa-music" style="margin-right: 6px;"></i> Baixar Áudio
+                        </button>
+                        <button type="button" class="pf-btn pf-btn--secondary dl-trigger-btn" data-mode="thumb" style="flex:1; min-width: 200px;">
+                            <i class="fa-solid fa-image" style="margin-right: 6px;"></i> Salvar Capa
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Faixa de Prova Social -->
+        <section class="pf-social-proof">
+            <div class="pf-container pf-social-grid">
+                <div>
+                    <div class="pf-social-num">10M+</div>
+                    <div class="pf-social-label">Vídeos Convertidos</div>
+                </div>
+                <div>
+                    <div class="pf-social-num">100%</div>
+                    <div class="pf-social-label">Sempre Gratuito</div>
+                </div>
+                <div>
+                    <div class="pf-social-num">0</div>
+                    <div class="pf-social-label">Instalações Necessárias</div>
+                </div>
+                <div>
+                    <div class="pf-social-num">4K</div>
+                    <div class="pf-social-label">Suporte a Alta Resolução</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Downloads Recentes -->
+        <section class="pf-container pf-section" id="history-section" style="display: none;">
+            <div class="pf-flex pf-items-center pf-justify-between pf-mb-md">
+                <div class="pf-flex pf-items-center pf-gap-sm">
+                    <i class="fa-solid fa-clock-rotate-left" style="color: var(--color-ink-muted);"></i>
+                    <h2 style="font-family: var(--pf-font-display); font-size: 1.5rem; margin:0; font-weight: 700;">Seus Downloads Recentes</h2>
+                </div>
+                <button type="button" id="clearHistoryBtn" class="pf-btn pf-btn--secondary pf-btn--icon" title="Limpar Histórico" style="border:none; padding: 0.5rem;">
+                    <i class="fa-solid fa-trash-can fs-6"></i>
+                </button>
+            </div>
+            <div class="pf-grid" id="history-grid">
+                <!-- Preenchido via Javascript (Local Storage) -->
+            </div>
+        </section>
+
+        <!-- Seção Features -->
+        <section id="features" class="pf-section-alt">
+            <div class="pf-container">
+                <div class="pf-text-center pf-mb-lg">
+                    <h2 style="font-family: var(--pf-font-display); font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">O Padrão Ouro em Conversão</h2>
+                    <p style="color: var(--color-ink-muted); max-width: 600px; margin: 0 auto; font-size: 1.1rem;">Esqueça sites com vírus e propagandas agressivas. Desenhamos o BaixarVideoYT para profissionais.</p>
+                </div>
+                
+                <div class="pf-features-grid">
+                    <div class="pf-card pf-feature-card">
+                        <div class="pf-feature-icon">
+                            <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+                        <h3 class="pf-feature-title">Ultra Velocidade</h3>
+                        <p class="pf-feature-desc">Nossos servidores dedicados processam a extração em milissegundos, enviando o link direto para você.</p>
+                    </div>
+                    <div class="pf-card pf-feature-card">
+                        <div class="pf-feature-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="pf-feature-title">100% Seguro e Privado</h3>
+                        <p class="pf-feature-desc">Nenhum dado é rastreado ou guardado no servidor. O arquivo vai diretamente para a sua máquina de forma anônima.</p>
+                    </div>
+                    <div class="pf-card pf-feature-card">
+                        <div class="pf-feature-icon">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3 class="pf-feature-title">Qualidade Máxima</h3>
+                        <p class="pf-feature-desc">Seja a thumbnail original em Full HD, o vídeo em alta resolução ou o áudio cristalino a 320kbps.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: Formatos Suportados e Shorts -->
+        <section class="pf-section">
+            <div class="pf-container">
+                <div class="pf-text-center pf-mb-lg">
+                    <h2 style="font-family: var(--pf-font-display); font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Formatos Sem Perda de Qualidade</h2>
+                    <p style="color: var(--color-ink-muted); max-width: 600px; margin: 0 auto; font-size: 1.1rem;">Baixe não apenas vídeos normais, mas também YouTube Shorts e Playlists nos formatos mais exigidos do mercado.</p>
+                </div>
+                
+                <div class="pf-grid pf-grid-3 pf-mt-lg">
+                    <div class="pf-card" style="text-align: center;">
+                        <i class="fa-solid fa-mobile-screen-button pf-mb-md" style="font-size: 2rem; color: var(--color-ink);"></i>
+                        <h3 style="font-weight: 700; font-size: 1.25rem; margin-bottom: 0.5rem;">YouTube Shorts</h3>
+                        <p style="color: var(--color-ink-muted); font-size: 0.95rem;">Extração perfeita do formato vertical (9:16). Ideal para repostar no TikTok ou Instagram Reels.</p>
+                    </div>
+                    <div class="pf-card" style="text-align: center;">
+                        <i class="fa-solid fa-tv pf-mb-md" style="font-size: 2rem; color: var(--color-ink);"></i>
+                        <h3 style="font-weight: 700; font-size: 1.25rem; margin-bottom: 0.5rem;">Vídeos em 4K e 1080p</h3>
+                        <p style="color: var(--color-ink-muted); font-size: 0.95rem;">Resoluções Full HD e 4K preservadas. Sem compressão destrutiva. Qualidade original de estúdio.</p>
+                    </div>
+                    <div class="pf-card" style="text-align: center;">
+                        <i class="fa-solid fa-headphones pf-mb-md" style="font-size: 2rem; color: var(--color-ink);"></i>
+                        <h3 style="font-weight: 700; font-size: 1.25rem; margin-bottom: 0.5rem;">Áudio MP3 320kbps</h3>
+                        <p style="color: var(--color-ink-muted); font-size: 0.95rem;">Taxa de bits máxima para audiófilos, podcasts e DJs. Grave músicas com fidelidade total.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: Para Quem É (Casos de Uso) -->
+        <section class="pf-section pf-bg-alt">
+            <div class="pf-container">
+                <div class="pf-text-center pf-mb-lg">
+                    <h2 style="font-family: var(--pf-font-display); font-size: 2.2rem; font-weight: 800; margin-bottom: 1rem;">Feito para criadores e entusiastas</h2>
+                    <p style="color: var(--color-ink-muted); max-width: 600px; margin: 0 auto; font-size: 1.1rem;">Nossa infraestrutura atende desde o consumo casual até demandas profissionais.</p>
+                </div>
+                
+                <div class="pf-grid">
+                    <div class="pf-card" style="text-align: left; background: var(--color-bg-alt); border: none;">
+                        <h3 class="pf-card__title"><i class="fa-solid fa-graduation-cap" style="color: var(--color-ink-muted); margin-right: 8px;"></i> Estudantes e Pesquisadores</h3>
+                        <p style="color: var(--color-ink-muted); font-size: 0.95rem; margin: 0;">Baixe aulas inteiras, palestras e tutoriais em MP4 para assistir offline, economizando seus dados móveis e mantendo o foco.</p>
+                    </div>
+                    <div class="pf-card" style="text-align: left; background: var(--color-bg-alt); border: none;">
+                        <h3 class="pf-card__title"><i class="fa-solid fa-video" style="color: var(--color-ink-muted); margin-right: 8px;"></i> Editores e Criadores</h3>
+                        <p style="color: var(--color-ink-muted); font-size: 0.95rem; margin: 0;">Extraia clipes em altíssima resolução ou faça o download de faixas sem perdas para usar em suas próprias produções e edições de vídeo.</p>
+                    </div>
+                    <div class="pf-card" style="text-align: left; background: var(--color-bg-alt); border: none;">
+                        <h3 class="pf-card__title"><i class="fa-solid fa-headphones" style="color: var(--color-ink-muted); margin-right: 8px;"></i> Amantes de Podcasts</h3>
+                        <p style="color: var(--color-ink-muted); font-size: 0.95rem; margin: 0;">Converta longos videocasts musicais para arquivos MP3 super leves, ideais para escutar no carro ou na academia economizando bateria.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Passo a Passo Horizontal -->
+        <section id="how-it-works" class="pf-section-alt">
+            <div class="pf-container">
+                <div class="pf-text-center pf-mb-lg">
+                    <h2 style="font-family: var(--pf-font-display); font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Da URL ao download em 3 passos</h2>
+                </div>
+                
+                <div class="pf-grid pf-step-cards">
+                    <div class="pf-card pf-step-card">
+                        <div class="pf-step-number">01</div>
+                        <h3 style="font-family: var(--pf-font-display); font-weight: 700; margin-bottom: 0.5rem; font-size: 1.15rem;">Copie o Link</h3>
+                        <p style="color: var(--color-ink-muted); font-size: 0.95rem; margin: 0;">Abra o YouTube e copie a URL do vídeo desejado pela barra de endereços ou botão compartilhar.</p>
+                    </div>
+                    <div class="pf-card pf-step-card">
+                        <div class="pf-step-number">02</div>
+                        <h3 style="font-family: var(--pf-font-display); font-weight: 700; margin-bottom: 0.5rem; font-size: 1.15rem;">Cole e Analise</h3>
+                        <p style="color: var(--color-ink-muted); font-size: 0.95rem; margin: 0;">Cole o link na barra de busca superior do BaixarVideoYT. Nosso sistema validará o conteúdo em milissegundos.</p>
+                    </div>
+                    <div class="pf-card pf-step-card">
+                        <div class="pf-step-number">03</div>
+                        <h3 style="font-family: var(--pf-font-display); font-weight: 700; margin-bottom: 0.5rem; font-size: 1.15rem;">Escolha e Salve</h3>
+                        <p style="color: var(--color-ink-muted); font-size: 0.95rem; margin: 0;">Selecione se prefere baixar em MP4 (Vídeo) ou MP3 (Áudio). O download iniciará instantaneamente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- FAQ -->
+        <section id="faq" class="pf-section-alt">
+            <div class="pf-container" style="max-width: 800px;">
+                <h2 class="pf-text-center" style="font-family: var(--pf-font-display); font-size: 2.5rem; font-weight: 800; margin-bottom: 2rem;">Dúvidas Comuns</h2>
+                
+                <details class="pf-faq-item">
+                    <summary>
+                        <div class="pf-flex pf-justify-between pf-items-center">
+                            Como baixar vídeo do YouTube direto no celular?
+                            <i class="fa-solid fa-chevron-down pf-faq-icon"></i>
+                        </div>
+                    </summary>
+                    <p>
+                        É muito simples. Abra o app do YouTube, clique em "Compartilhar" e depois em "Copiar link". Cole o link na barra de busca do BaixarVideoYT, clique em Analisar e selecione a opção de baixar vídeo. O download iniciará automaticamente e será salvo na galeria do seu celular.
+                    </p>
+                </details>
+
+                <details class="pf-faq-item">
+                    <summary>
+                        <div class="pf-flex pf-justify-between pf-items-center">
+                            O BaixarVideoYT é totalmente gratuito e seguro?
+                            <i class="fa-solid fa-chevron-down pf-faq-icon"></i>
+                        </div>
+                    </summary>
+                    <p>
+                        Sim, o BaixarVideoYT é 100% gratuito. Diferente de outros sites, não exigimos cadastro, não instalamos malwares na sua máquina e não abrimos abas de propagandas invasivas. A conversão é feita nos nossos servidores, garantindo sua privacidade e segurança.
+                    </p>
+                </details>
+
+                <details class="pf-faq-item">
+                    <summary>
+                        <div class="pf-flex pf-justify-between pf-items-center">
+                            Como converter vídeo do YouTube para MP3 grátis?
+                            <i class="fa-solid fa-chevron-down pf-faq-icon"></i>
+                        </div>
+                    </summary>
+                    <p>
+                        Cole a URL do vídeo desejado no nosso buscador. Após a análise do link, escolha o botão "Baixar Áudio". Nosso sistema extrairá a faixa original em formato MP3 de alta qualidade e enviará para você.
+                    </p>
+                </details>
+
+                <details class="pf-faq-item">
+                    <summary>
+                        <div class="pf-flex pf-justify-between pf-items-center">
+                            Existe algum limite de tamanho ou tempo de vídeo para baixar?
+                            <i class="fa-solid fa-chevron-down pf-faq-icon"></i>
+                        </div>
+                    </summary>
+                    <p>
+                        Atualmente não limitamos a quantidade de downloads, mas vídeos maiores que 2 horas podem demorar mais tempo para serem processados, dependendo da carga dos nossos servidores. Recomendamos o uso responsável.
+                    </p>
+                </details>
+
+                <details class="pf-faq-item">
+                    <summary>
+                        <div class="pf-flex pf-justify-between pf-items-center">
+                            Qual a diferença entre MP4 e MP3 na hora de baixar?
+                            <i class="fa-solid fa-chevron-down pf-faq-icon"></i>
+                        </div>
+                    </summary>
+                    <p>
+                        O MP4 é o formato padrão para vídeos (com áudio e imagem unidos), ideal para assistir clipes e aulas offline. O MP3 é apenas o arquivo de áudio, perfeito para baixar músicas, podcasts ou playlists de som para ouvir no carro ou no celular ocupando muito menos espaço de armazenamento.
+                    </p>
+                </details>
+
+                <details class="pf-faq-item">
+                    <summary>
+                        <div class="pf-flex pf-justify-between pf-items-center">
+                            Onde ficam salvos os vídeos baixados no iPhone ou Android?
+                            <i class="fa-solid fa-chevron-down pf-faq-icon"></i>
+                        </div>
+                    </summary>
+                    <p>
+                        No Android, os arquivos vão direto para a pasta "Downloads". No iPhone (iOS), os vídeos e áudios baixados pelo Safari são salvos no aplicativo "Arquivos", na pasta Downloads. Você também pode salvar os vídeos diretamente no rolo da câmera através do botão compartilhar.
+                    </p>
+                </details>
+            </div>
+        </section>
+
+        <!-- Anúncio Estratégico Rodapé -->
+        <section class="pf-container pf-mt-xl pf-mb-md">
+            <div class="pf-ad-block">
+                Espaço para Anúncio (728x90)
+            </div>
+        </section>
+    </main>
+
+    <footer class="pf-text-center pf-mt-xl" style="color: var(--color-ink-muted); font-size: 0.85rem; padding-bottom: 2rem; border-top: 1px solid var(--pf-surface-high); padding-top: 2rem;">
+        &copy; 2026 BaixarVideoYT. Todos os direitos reservados.
+    </footer>
+
+    <!-- Toast Container (Shadcn style) -->
+    <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

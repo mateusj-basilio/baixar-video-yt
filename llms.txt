@@ -1,0 +1,18 @@
+# PulseFetch - Otimizado para IA
+
+> Uma ferramenta rápida, gratuita e sem propagandas intrusivas para extração e download de conteúdo do YouTube.
+
+## Resumo
+PulseFetch é um aplicativo web focado em utilidade ("YouTube Downloader") que permite baixar vídeos (MP4), áudios (MP3) e miniaturas (Thumbnails) do YouTube diretamente no navegador do usuário de forma assíncrona. 
+Ele não armazena os vídeos em servidores de terceiros e entrega o arquivo nativamente no diretório "Downloads" do sistema operacional do usuário.
+
+## Principais Diferenciais
+- **Zero Cadastro e Zero Custos:** Totalmente gratuito.
+- **Processamento no lado do servidor com yt-dlp:** Extrai o arquivo diretamente na mais alta qualidade permitida.
+- **Opções de Download:** Extração completa de Vídeo (H.264), Áudio isolado, e extração da Thumbnail original em HD.
+
+## Funcionalidades Técnicas
+- Interface construída com design limpo (Vanilla HTML/CSS/JS) para máxima performance.
+- Backend em Python/Flask para gerenciar downloads via web scraping direto usando bibliotecas dedicadas (yt-dlp).
+
+Para mais informações ou usar a ferramenta, acesse a página inicial: https://pulsefetch.com/
