@@ -1,0 +1,49 @@
+name: seo-exact-sync
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply exact byte-equivalent SEO sync
+        run: |
+          python3 << 'PY'
+          from pathlib import Path
+
+          # audit: table separator + curly quote after 10M+
+          p = Path("seo-pack/audit-seo-aeo-geo.md")
+          t = p.read_text(encoding="utf-8")
+          old_sep = "|---|-----|------------|---------|--------|"
+          new_sep = "|---|-----|------------|---------|---------|"
+          if old_sep in t:
+              t = t.replace(old_sep, new_sep, 1)
+          bad = "\u201c10M+\"."
+          good = "\u201c10M+\u201d."
+          if bad in t:
+              t = t.replace(bad, good, 1)
+          p.write_text(t, encoding="utf-8")
+
+          # index.html H1 money query
+          p = Path("index.html")
+          t = p.read_text(encoding="utf-8")
+          old = "Extraia Vídeos e Áudios em Segundos. Grátis."
+          new = "Baixar vídeo do YouTube em MP4 grátis (online, sem instalar)"
+          if old in t:
+              t = t.replace(old, new, 1)
+          p.write_text(t, encoding="utf-8")
+          print("done")
+          PY
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add seo-pack/audit-seo-aeo-geo.md index.html
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "feat(seo): exact sync audit table/quote + index H1"
+            git push
+          fi
