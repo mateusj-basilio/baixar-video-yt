@@ -11,7 +11,7 @@
 ## Resumo executivo — top 8 fixes (impacto × esforço)
 
 | # | Fix | Prioridade | Impacto | Esforço |
-|---|-----|------------|---------|--------|
+|---|-----|------------|---------|---------|
 | 1 | Servir `robots.txt`, `sitemap.xml` e `llms.txt` na raiz (hoje **404** no Vercel) e corrigir URLs PulseFetch | **P0** | Alto | Baixo |
 | 2 | Estabilizar domínio canônico `baixarvideoyt.com.br` (DNS/hosting) **ou** temporariamente apontar canonical/og/sitemap para o host que responde | **P0** | Alto | Médio (infra) |
 | 3 | Trocar H1 marketing → query de dinheiro (alinhado ao title / brief #01) | **P0** | Alto | Baixo |
@@ -164,7 +164,7 @@ IAs que lerem só o HTML tendem a citar **BaixarVideoYT**; as que lerem `llms.tx
 - Fluxo em 3 passos; caminhos Android/iOS.
 
 ### Citation-worthiness — melhorar
-- Remover/justificar “10M+".
+- Remover/justificar “10M+”.
 - Adicionar Organization (draft) com `url`, `name`, `sameAs` (GitHub) — **sem** `aggregateRating` falso.
 - Servir `llms.txt` corrigido.
 - Páginas how-to estáveis (URLs próprias) aumentam chance de citação vs SPA de uma página só.
