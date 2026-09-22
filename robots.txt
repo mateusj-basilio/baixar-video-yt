@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 
+# Permitir crawlers de busca de IA (Generative Engine Optimization)
 User-agent: OAI-SearchBot
 Allow: /
 
@@ -10,6 +11,7 @@ Allow: /
 User-agent: Claude-SearchBot
 Allow: /
 
+# Bloquear crawlers de treinamento pesados (Economia de Banda / Zero ganho de tráfego)
 User-agent: GPTBot
 Disallow: /
 
