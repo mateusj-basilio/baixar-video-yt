@@ -1,18 +1,40 @@
-# PulseFetch - Otimizado para IA
+# BaixarVideoYT
 
-> Uma ferramenta rápida, gratuita e sem propagandas intrusivas para extração e download de conteúdo do YouTube.
+> Ferramenta web gratuita para baixar vídeos e áudios do YouTube em MP4 ou MP3, direto no navegador, sem instalar app e sem marcas d'água.
 
 ## Resumo
-PulseFetch é um aplicativo web focado em utilidade ("YouTube Downloader") que permite baixar vídeos (MP4), áudios (MP3) e miniaturas (Thumbnails) do YouTube diretamente no navegador do usuário de forma assíncrona. 
-Ele não armazena os vídeos em servidores de terceiros e entrega o arquivo nativamente no diretório "Downloads" do sistema operacional do usuário.
+BaixarVideoYT permite colar um link do YouTube e baixar o arquivo em MP4 (até Full HD / 4K quando o vídeo fonte permitir) ou MP3 (até 320 kbps), inclusive Shorts e playlists. O processamento usa servidores próprios; o arquivo vai para a pasta de downloads do dispositivo do usuário. Não exige cadastro.
 
-## Principais Diferenciais
-- **Zero Cadastro e Zero Custos:** Totalmente gratuito.
-- **Processamento no lado do servidor com yt-dlp:** Extrai o arquivo diretamente na mais alta qualidade permitida.
-- **Opções de Download:** Extração completa de Vídeo (H.264), Áudio isolado, e extração da Thumbnail original em HD.
+## Para quem é
+- Criadores e editores que precisam de clipes em alta resolução
+- Estudantes e pesquisadores que querem aulas e tutoriais offline
+- Ouvintes de podcasts e videocasts que preferem MP3 leve
 
-## Funcionalidades Técnicas
-- Interface construída com design limpo (Vanilla HTML/CSS/JS) para máxima performance.
-- Backend em Python/Flask para gerenciar downloads via web scraping direto usando bibliotecas dedicadas (yt-dlp).
+## Diferenciais
+- Gratuito, sem cadastro
+- Foco em velocidade e privacidade (sem adware invasivo)
+- Sem marcas d'água no arquivo
+- Funciona no navegador (desktop e celular)
 
-Para mais informações ou usar a ferramenta, acesse a página inicial: https://pulsefetch.com/
+## Como usar
+1. Copie a URL do YouTube
+2. Cole em https://baixarvideoyt.com.br/
+3. Escolha MP4 (vídeo) ou MP3 (áudio) e salve
+
+## URLs principais
+- Home: https://baixarvideoyt.com.br/
+- YouTube → MP3: https://baixarvideoyt.com.br/youtube-para-mp3
+- Shorts: https://baixarvideoyt.com.br/baixar-youtube-shorts
+- No celular: https://baixarvideoyt.com.br/baixar-youtube-no-celular
+- Seguro: https://baixarvideoyt.com.br/baixar-youtube-seguro
+- Onde salva: https://baixarvideoyt.com.br/onde-ficam-salvos-downloads-youtube
+- MP4 ou MP3: https://baixarvideoyt.com.br/mp4-ou-mp3-youtube
+- Playlist: https://baixarvideoyt.com.br/baixar-playlist-youtube
+- Aulas: https://baixarvideoyt.com.br/baixar-aulas-youtube
+- Podcast: https://baixarvideoyt.com.br/baixar-podcast-youtube
+- 4K / Full HD: https://baixarvideoyt.com.br/baixar-youtube-4k
+- Qualidade MP3: https://baixarvideoyt.com.br/qualidade-mp3-youtube
+
+## Site
+- Nome do produto: BaixarVideoYT
+- Host alternativo (se DNS .com.br instável): https://baixar-video-yt.vercel.app/
