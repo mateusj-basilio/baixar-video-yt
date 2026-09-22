@@ -13,6 +13,31 @@ tasks_state = {}
 def serve_html():
     return send_file('index.html')
 
+@app.route('/robots.txt')
+def robots_txt():
+    return send_file('robots.txt', mimetype='text/plain')
+
+@app.route('/sitemap.xml')
+def sitemap_xml():
+    return send_file('sitemap.xml', mimetype='application/xml')
+
+@app.route('/llms.txt')
+def llms_txt():
+    return send_file('llms.txt', mimetype='text/plain')
+
+@app.route('/youtube-para-mp3')
+def page_youtube_mp3():
+    return send_file('youtube-para-mp3.html')
+
+@app.route('/baixar-youtube-shorts')
+def page_shorts():
+    return send_file('baixar-youtube-shorts.html')
+
+@app.route('/baixar-youtube-no-celular')
+def page_celular():
+    return send_file('baixar-youtube-no-celular.html')
+
+
 @app.route('/api/info', methods=['POST'])
 def get_info():
     data = request.get_json()
